@@ -5,6 +5,7 @@ import { AppModelState, ConnectRC, Loading, connect } from 'umi';
 import { MenuDataItem } from '@ant-design/pro-layout';
 import { MenuInfo } from 'rc-menu/lib/interface';
 import Breadcrumbs from '../components/breadcurmbs';
+import { handleMenuClick } from '../utils';
 
 const NavMenu = ({
   app,
@@ -15,40 +16,26 @@ const NavMenu = ({
 }) => {
   const { menus } = app;
 
-  console.log('menus', menus);
-
-  const [breadItem, setBreadItem] = useState([]);
-
-  const handleMenuClick = ({ keyPath }: MenuInfo) => {
-    let node: AnyObject = {};
-    keyPath = keyPath.reverse();
-    const data = keyPath?.map((key) => {
-      if (!node.label) {
-        node = menus?.find((d: any) => d.key === key);
-      } else {
-        node = node?.children?.find((d: any) => d.key === key);
-      }
-      return {
-        label: node?.label,
-        ley: node?.key,
-      };
-    });
-    setBreadItem(data);
-    dispatch({
-      type: 'app/updateBreadcrumbs',
-      payload: {
-        breadcrumbs: data,
-      },
-    });
+  const onMenuClick = ({ keyPath }: MenuInfo) => {
+    handleMenuClick({ keyPath }, menus, dispatch);
   };
 
   return (
-    <div>
+    <div
+      style={{
+        position: 'sticky',
+        top: '50px',
+        background: '#fff',
+        left: 0,
+        right: 0,
+        zIndex: 99,
+      }}
+    >
       <Menu
         theme="light"
         mode="horizontal"
         items={menus}
-        onClick={handleMenuClick}
+        onClick={onMenuClick}
       />
       <div style={{ padding: '10px 0 5px 10px' }}>
         <Breadcrumbs />

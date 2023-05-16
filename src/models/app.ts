@@ -543,6 +543,21 @@ const genMenu = (pKey: string | null): AppModelState[] => {
     {
       "label": "Customer Annexure view",
       "key": "95"
+    },
+    {
+      "label": "horizontal-meun",
+      "key": "96",
+      path: '/horizontal-menus'
+    },
+    {
+      "label": "vertical-menu",
+      "key": "97",
+      path: '/vertical-menus'
+    },
+    {
+      "label": "inline-menu",
+      "key": "98",
+      path: '/inline-menus'
     }
   ];
   return navs;
@@ -592,26 +607,22 @@ const AppModelStore: AppModelType = {
   effects: {
     *query({ payload }, { call, put }) {
       const list = yield call(getMenus, {});
-      console.log('list-query', list)
       yield put({
         type: 'save',
         payload: {
           menus: list,
         },
       });
-      console.log('query', payload, call, put);
     },
   },
   reducers: {
     save(state, action) {
-      console.log('save', action);
       return {
         ...state,
         ...action.payload,
       };
     },
     updateBreadcrumbs(state, action) {
-      console.log('updateBreadcrumbs', action)
       return {
         ...state,
         ...action.payload,

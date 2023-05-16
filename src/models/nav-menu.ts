@@ -153,7 +153,7 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
               "key": "36"
             }
           ],
-          
+
         },
         {
           "label": "Access Control",
@@ -192,7 +192,7 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
               "key": "Central Warehouse"
             }
           ],
-          
+
         },
         {
           "label": "Channel 13 Masters",
@@ -207,7 +207,7 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
               "key": "Customer-wise Product-wise Price"
             }
           ],
-          
+
         },
         {
           "label": "Shipment Tracking",
@@ -246,35 +246,35 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
               "key": "Opt Out SMS"
             }
           ],
-          
+
         },
         {
           "label": "Complaint Category",
           "key": "40",
-          
+
         },
         {
           "label": "Perennial Non Available Items",
           "key": "41",
-          
+
         },
         {
           "label": "Attachment",
           "key": "42",
-          
+
         },
         {
           "label": "Upload Payment Customer",
           "key": "43",
-          
+
         },
         {
           "label": "Customer Annexure Master",
           "key": "44",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "Orders",
@@ -283,55 +283,55 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Create / Edit",
           "key": "46",
-          
+
         },
         {
           "label": "Bulk Cancellation of Orders",
           "key": "47",
-          
+
         },
         {
           "label": "Delete",
           "key": "48",
-          
+
         },
         {
           "label": "Pending For EUD Approval",
           "key": "49",
-          
+
         },
         {
           "label": "Pending For Rate Contract Approval",
           "key": "50",
-          
+
         },
         {
           "label": "Pending For My Approval",
           "key": "51",
-          
+
         },
         {
           "label": "Pending For CSC Approval",
           "key": "52",
-          
+
         },
         {
           "label": "Order History",
           "key": "53",
-          
+
         },
         {
           "label": "Orders in Error",
           "key": "54",
-          
+
         },
         {
           "label": "Orders Stuck for SAP Intgegration",
           "key": "55",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "MIS",
@@ -340,120 +340,120 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Orders",
           "key": "57",
-          
+
         },
         {
           "label": "Invoices",
           "key": "58",
-          
+
         },
         {
           "label": "Sales",
           "key": "59",
-          
+
         },
         {
           "label": "Orders V/S Sales",
           "key": "60",
-          
+
         },
         {
           "label": "Orders V/S Sales - Schedule Lines",
           "key": "61",
-          
+
         },
         {
           "label": "EUD Approval Report",
           "key": "62",
-          
+
         },
         {
           "label": "Employee wise Sales Mapping Download",
           "key": "63",
-          
+
         },
         {
           "label": "Outstanding",
           "key": "64",
-          
+
         },
         {
           "label": "Stock",
           "key": "65",
-          
+
         },
         {
           "label": "LR Details",
           "key": "66",
-          
+
         },
         {
           "label": "View Sales Tax Difference",
           "key": "67",
-          
+
         },
         {
           "label": "Month Wise Total Value of Orders",
           "key": "68",
-          
+
         },
         {
           "label": "Monthly Submitted Order Report",
           "key": "69",
-          
+
         },
         {
           "label": "Zone Wise Product Wise Average Price",
           "key": "70",
-          
+
         },
         {
           "label": "Orders Pending For Merck Approval",
           "key": "71",
-          
+
         },
         {
           "label": "Draft Order Status",
           "key": "72",
-          
+
         },
         {
           "label": "Proportionate Freight",
           "key": "73",
-          
+
         },
         {
           "label": "Dead Orders",
           "key": "74",
-          
+
         },
         {
           "label": "Download Deleted Orders",
           "key": "75",
-          
+
         },
         {
           "label": "Download Orders for Customers For Deleted Order Items",
           "key": "76",
-          
+
         },
         {
           "label": "Download Price List Report",
           "key": "77",
-          
+
         },
         {
           "label": "Login Logout Report",
           "key": "78",
-          
+
         },
         {
           "label": "Audit Log Report",
           "key": "79",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "Dispatches",
@@ -462,10 +462,10 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Download LR Details",
           "key": "81",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "Complaints",
@@ -474,10 +474,10 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Pending For Closure",
           "key": "83",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "Shipment Tracking",
@@ -486,25 +486,25 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Search Shipments",
           "key": "85",
-          
+
         },
         {
           "label": "Retriggering Emails",
           "key": "86",
-          
+
         },
         {
           "label": "Feedback Report",
           "key": "87",
-          
+
         },
         {
           "label": "Dashboards",
           "key": "88",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "COA",
@@ -513,15 +513,15 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Upload Multiple Files",
           "key": "90",
-          
+
         },
         {
           "label": "Upload Mapping Data",
           "key": "91",
-          
+
         }
       ],
-      
+
     },
     {
       "label": "Transaction view",
@@ -530,15 +530,14 @@ const genMenu = (pKey: string | null): NavMenuModelState[] => {
         {
           "label": "Transaction Stuck For SAP Integration",
           "key": "93",
-          
+
         },
         {
           "label": "Transaction Data",
           "key": "94",
-          
+
         }
       ],
-      
     },
     {
       "label": "Customer Annexure view",
@@ -584,19 +583,16 @@ const NavMenuModelStore: NavMenuModelType = {
   effects: {
     *query({ payload }, { call, put }) {
       const list = yield call(getMenus, {});
-      console.log('list-query', list)
       yield put({
         type: 'save',
         payload: {
           menus: list,
         },
       });
-      console.log('query', payload, call, put);
     },
   },
   reducers: {
     save(state, action) {
-      console.log('save', action);
       return {
         ...state,
         ...action.payload,

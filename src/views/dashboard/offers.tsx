@@ -66,13 +66,14 @@ const ListItem = ({ title, data }: IItem) => {
 const DownloadList = ({ list }) => {
   return (
     <Descriptions title="Responsive Descriptions" bordered column={1}>
-      {list.map((item) => (
-        <Descriptions.Item label={item.label}>
-          {item.children?.map((l) => (
+      {list.map((item, i) => (
+        <Descriptions.Item key={item.label} label={item.label}>
+          {item.children?.map((l, k) => (
             <div
               style={{
                 margin: '2px 0',
               }}
+              key={k}
             >
               <a href={`#${l.label}`}>
                 <DownloadOutlined /> {l.label}
@@ -214,7 +215,7 @@ const Offers = () => {
       <Divider /> */}
       <Row>
         {list.map((item, i) => (
-          <Col span={6}>
+          <Col span={6} key={i}>
             <ListItem key={i} {...item} />
           </Col>
         ))}

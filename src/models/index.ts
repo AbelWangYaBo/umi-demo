@@ -42,12 +42,10 @@ const IndexModel: IndexModelType = {
           name: myuser.name,
         },
       });
-      console.log('query', payload, call, put);
     },
   },
   reducers: {
     save(state, action) {
-      console.log('save', action);
       return {
         ...state,
         ...action.payload,

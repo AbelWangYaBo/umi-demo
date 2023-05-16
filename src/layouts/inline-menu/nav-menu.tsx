@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { AppModelState, ConnectRC, Loading, connect } from 'umi';
 import { MenuDataItem } from '@ant-design/pro-layout';
 import { MenuInfo } from 'rc-menu/lib/interface';
-
+import { history } from 'umi';
 import { handleMenuClick } from '../utils';
 
 const NavMenu = ({
@@ -21,13 +21,7 @@ const NavMenu = ({
   };
 
   return (
-    <Menu
-      theme="light"
-      mode="vertical"
-      // mode="inline"
-      items={menus}
-      onClick={onMenuClick}
-    />
+    <Menu theme="light" mode="inline" items={menus} onClick={onMenuClick} />
   );
 };
 

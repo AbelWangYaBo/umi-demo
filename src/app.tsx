@@ -8,12 +8,6 @@ export async function render(oldRender) {
 
   request('/login');
 
-  console.log(
-    'process.env.BASE_URL',
-    process.env,
-    process.env.BASE_URL,
-    process.env.PORT,
-  );
   if (!localStorage.getItem('TOKEN')) {
     history.push('/login');
     oldRender();

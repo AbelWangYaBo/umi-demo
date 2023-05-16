@@ -2,10 +2,17 @@ export default [
   { path: '/analyze', component: '@/pages/analyze/index' },
   { path: '/search', component: '@/pages/search/index' },
   {
-    path: '/dashboard',
+    path: '/vertical-menus',
     component: '@/layouts/vertical-menu/index',
     routes: [
-      { path: '/dashboard', component: 'dashboard', title: 'Dashboard' },
+      { path: '/vertical-menus', component: 'dashboard', title: 'Dashboard' },
+    ],
+  },
+  {
+    path: '/inline-menus',
+    component: '@/layouts/inline-menu/index',
+    routes: [
+      { path: '/inline-menus', component: 'dashboard', title: 'Dashboard' },
     ],
   },
   {
@@ -16,10 +23,12 @@ export default [
     ],
   },
   {
+    // horizontal Menu
     path: '/',
-    component: '@/layouts/code/index',
+    component: '@/layouts/horizontal-menu/index',
     routes: [
       { path: '/', component: 'dashboard', title: 'Index' },
+      { path: '/horizontal-menus', component: 'dashboard', title: 'Index' },
     ],
   },
 ]
