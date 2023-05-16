@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'umi';
-import { Button, Checkbox, Form, Input, Col, Row } from 'antd';
+import { Button, Checkbox, Form, Input, Col, Row, Alert } from 'antd';
 
 interface IProps {
   onSubmit: (params: {}) => void;
@@ -69,6 +69,7 @@ const App = (props: IProps) => {
             Log In
           </Button>
         </Form.Item>
+        <Alert type="error" message="enter UserCode and Password, like 123 / 123, click LogIn" />
         <Row>
           <Col span={12}>
             <Link to="/forget-password">Forget Password</Link>
