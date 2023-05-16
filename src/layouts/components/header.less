@@ -1,0 +1,43 @@
+.header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 50px;
+  z-index: 90;
+  .logo-panel {
+    display: flex;
+    flex: 0 0 18%;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 50px;
+    text-align: center;
+    background: #e5ebf6
+      url(https://sgsi2w2244.ap.merckgroup.com/MMIOMS/App_Themes/Base/Images/topspliter.jpg)
+      no-repeat top right;
+  }
+  .user-details-panel {
+    display: flex;
+    flex: 0 0 82%;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 50px;
+    background-color: #3366cc;
+    .left-sec {
+      flex: 0 0 44%;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .center-sec {
+      flex: 0 0 32%;
+    }
+    .right-sec {
+      flex: 0 0 24%;
+    }
+  }
+}

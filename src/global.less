@@ -1,0 +1,64 @@
+html {
+  background: #f6f8fc
+    url(https://sgsi2w2244.ap.merckgroup.com/MMIOMS/App_Themes/Base/Images/topbkgnd.jpg)
+    repeat-x top left;
+}
+body {
+  background: url(https://sgsi2w2244.ap.merckgroup.com/MMIOMS/App_Themes/Base/Images/botbkgnd.jpg)
+    repeat-x bottom left;
+}
+.container {
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 4px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mp(@i) when(@i <= 20) {
+  .m@{i},
+  .my@{i},
+  .mt@{i}{
+    margin-top: @i + 0px;
+  }
+  .m@{i},
+  .mx@{i},
+  .mr@{i}{
+    margin-right: @i + 0px;
+  }
+  .m@{i},
+  .my@{i},
+  .mb@{i}{
+    margin-bottom: @i + 0px;
+  }
+  .m@{i},
+  .mx@{i},
+  .ml@{i}{
+    margin-left: @i + 0px;
+  }
+  .p@{i},
+  .py@{i},
+  .pt@{i}{
+    padding-top: @i + 0px;
+  }
+  .p@{i},
+  .px@{i},
+  .pr@{i}{
+    padding-right: @i + 0px;
+  }
+  .p@{i},
+  .py@{i},
+  .pb@{i}{
+    padding-bottom: @i + 0px;
+  }
+  .p@{i},
+  .px@{i},
+  .pl@{i}{
+    padding-left: @i + 0px;
+  }
+  .mp((@i + 5));
+}
+.mp(0);
